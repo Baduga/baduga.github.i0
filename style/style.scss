@@ -1,0 +1,91 @@
+//vars
+$black: #191a16;
+$white: #F3F5E5;
+$green: #B4DD43;
+//mixins
+
+//import
+
+//tags
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Century Gothic;
+
+}
+body{
+    background: $black;
+
+}
+h1{
+    color: $white;
+}
+a{
+    text-decoration: none;
+    color: $white;
+
+}
+//styles
+.content{
+    height: 100%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10vw;
+    box-sizing: border-box;
+
+    .block{
+        width: 100%;
+        height: 1000px;
+        display: flex;
+
+
+        .slider{
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            flex: 1;
+            cursor: pointer;
+            transition: 0.3s ease-out;
+            a{
+                background-color: $green;
+                border-radius: 5px;
+                color: $black;
+                padding: 3px;
+                display: none;
+                transition: 0.3s ease-out;
+
+                &:hover{
+                    background-color: $white;
+                    color: $green;
+
+                }
+            }
+        }
+        .active{
+            background-size: 120%;
+            flex: 10;
+            box-shadow: inset 7px 7px 15px rgba(0, 0, 0, 0.5);
+            transition: 0.5s ease-out;
+            a{
+                display: inline-block;
+            }
+        }
+    }
+
+    .materials{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
