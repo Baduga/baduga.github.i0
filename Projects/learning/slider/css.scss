@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgb(77, 76, 94), rgb(28, 37, 39));
+    transition: background 5s ease-out;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 3vh;
+  
+    .card {
+      flex: 1;
+      height: 45vh;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      transition: 0.5s ease-out;
+      cursor: pointer;
+
+      &.active {
+        background-size: 120%;
+        flex: 10;
+        box-shadow: inset 7px 7px 15px rgba(0, 0, 0, 0.5);
+        transition: 0.5s ease-out;
+
+      }
+    }
+  }

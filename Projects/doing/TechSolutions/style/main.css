@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #E7F0E0;
+}
+
+.header {
+  background-color: #F5F8F3;
+  height: 6.77vw;
+  padding: 1.41vw 14.58vw;
+  position: relative;
+}
+.header .hat {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+}
+.header .hat .logo {
+  width: 10.73vw;
+  height: 3.95vw;
+  background-image: url(img/EcoHome-logo.svg);
+  background-repeat: no-repeat;
+}
+.header .hat .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 57.29vw;
+  height: 3.13vw;
+  margin-top: 0.83vw;
+  background-color: #42453A;
+  border-radius: 0.52vw;
+  box-shadow: inset 0 0.21vw 0.52vw rgba(0, 0, 0, 0.25);
+}
+.header .hat .navigation .element {
+  width: 10.95vw;
+  height: 100%;
+  transition: ease-in-out 0.3s;
+}
+.header .hat .navigation .element * {
+  height: 100%;
+  border-radius: 0.52vw;
+}
+.header .hat .navigation .element .content-wrap {
+  width: 8.33vw;
+  color: #E7F0E0;
+  text-align: center;
+  padding-top: 0.78vw;
+  transition: ease-in-out 0.3s;
+}
+.header .hat .navigation .element .content-wrap:hover {
+  background-color: #B4DE35;
+  color: #303327;
+}
+.header .hat .navigation .element .content-wrap h1 {
+  height: 0.78vw;
+  font-size: 1.3vw;
+  font-family: Century Gothic;
+}
+.header .hat .navigation .element-active .bright-wrap {
+  background-color: #B4DE35;
+  width: 100%;
+}
+.header .hat .navigation .element-active .bright-wrap .light-wrap {
+  background-color: #6D784D;
+  width: 85%;
+}
+.header .hat .navigation .element-active .bright-wrap .light-wrap .content-wrap {
+  background-color: #303327;
+  width: 8.33vw;
+  text-align: center;
+  color: #F5F8F3;
+}
+.header .hat .navigation .element-active .bright-wrap .light-wrap .content-wrap:hover {
+  background-color: #E7F0E0;
+  color: #303327;
+  transform: scale(102%);
+  box-shadow: 0 0.21vw 0.52vw rgba(0, 0, 0, 0.25);
+}
+.header .hat .navigation .search .content {
+  width: 0;
+}
+.header .hat .navigation .search .button {
+  color: #B4DE35;
+  width: 3.13vw;
+  height: 100%;
+}
+
+.content {
+  height: 1000vw;
+}/*# sourceMappingURL=main.css.map */

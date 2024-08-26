@@ -1,0 +1,21 @@
+$wbgc: #F5F8F3;
+$gbgc: #E7F0E0;
+$dbgc: #42453A;
+$bac: #B4DE35;
+$lac: #6D784D;
+$dac: #303327; 
+
+.content{
+    .block{
+
+        &1{
+            background-image: url(img/block-1-bg.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 50% 40%;
+            width: 100%;
+            height: 38vw;
+            
+       }
+    }
+}

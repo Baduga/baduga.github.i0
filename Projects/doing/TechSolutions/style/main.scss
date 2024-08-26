@@ -1,0 +1,125 @@
+//цвета
+$wbgc: #F5F8F3;
+$gbgc: #E7F0E0;
+$dbgc: #42453A;
+$bac: #B4DE35;
+$lac: #6D784D;
+$dac: #303327;
+
+//тэги
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: $gbgc;
+}
+
+//шапка
+.header {
+  background-color: $wbgc;
+  height: 6.77vw; // 130px / 19.2
+  padding: 1.41vw 14.58vw; // 27px / 19.2, 280px / 19.2
+  position: relative;
+
+  .hat {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+
+    .logo {
+      width: 10.73vw; // 206px / 19.2
+      height: 3.95vw; // 76px / 19.2
+      background-image: url(img/EcoHome-logo.svg);
+      background-repeat: no-repeat;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 57.29vw; // 1100px / 19.2
+      height: 3.13vw; // 60px / 19.2
+      margin-top: 0.83vw; // 16px / 19.2
+      background-color: $dbgc;
+      border-radius: 0.52vw; // 10px / 19.2
+      box-shadow: inset 0 0.21vw 0.52vw rgba($color: #000000, $alpha: 0.25);
+
+      .element {
+        width: 10.95vw; // 210px / 19.2
+        height: 100%;
+        transition: ease-in-out 0.3s;
+
+        * {
+          height: 100%;
+          border-radius: 0.52vw; // 10px / 19.2
+        }
+
+        .content-wrap {
+          width: 8.33vw; // 160px / 19.2
+          color: $gbgc;
+          text-align: center;
+          padding-top: 0.78vw; // 15px / 19.2
+          transition: ease-in-out 0.3s;
+
+          &:hover {
+            background-color: $bac;
+            color: $dac;
+          }
+
+          h1 {
+            height: 0.78vw; // 15px / 19.2
+            font-size: 1.3vw; // 20pt / 19.2
+            font-family: Century Gothic;
+          }
+        }
+
+        &-active {
+          .bright-wrap {
+            background-color: $bac;
+            width: 100%;
+
+            .light-wrap {
+              background-color: $lac;
+              width: 85%;
+
+              .content-wrap {
+                background-color: $dac;
+                width: 8.33vw; // 160px / 19.2
+                text-align: center;
+                color: $wbgc;
+
+                &:hover {
+                  background-color: $gbgc;
+                  color: $dac;
+                  transform: scale(102%);
+                  box-shadow: 0 0.21vw 0.52vw rgba($color: #000000, $alpha: 0.25);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .search {
+        .content {
+          width: 0;
+        }
+
+        .button {
+          color: $bac;
+          width: 3.13vw; // 60px / 19.2
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  height: 1000vw; // 1920px / 19.2
+}
